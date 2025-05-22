@@ -12,6 +12,15 @@ nav{
     border-bottom:1px solid gray;
 }
 
+.logo{
+    margin-right: 40px;
+    margin-top: -4px;
+}
+
+.avatar{
+    width: 40px;
+    margin-top: -10px;
+}
 .attribution {
     font-size: 11px;
     text-align: center;
