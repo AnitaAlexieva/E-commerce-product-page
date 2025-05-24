@@ -41,6 +41,11 @@ nav{
     border-radius: 50px;
 }
 
+.content{
+    display: flex;
+    gap:100px;
+    align-items: center;
+    margin-top: 50px;
 .attribution {
     font-size: 11px;
     text-align: center;
