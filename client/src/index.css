@@ -46,6 +46,16 @@ nav{
     gap:100px;
     align-items: center;
     margin-top: 50px;
+.sneaker{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.large-sneakers{
+    width: 400px;
+    border-radius: 20px;
+}
 .attribution {
     font-size: 11px;
     text-align: center;
