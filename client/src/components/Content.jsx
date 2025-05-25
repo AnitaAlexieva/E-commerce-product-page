@@ -22,10 +22,11 @@ export default function Content() {
           <h6>$250.00</h6>
           <div className="buying">
             <div className="count">
-              <img src="\assets\images\icon-minus.svg" alt="" />
+              <img className="minus" src="\assets\images\icon-minus.svg" alt="" />
               <p className="count-number">0</p>
-              <img src="\assets\images\icon-plus.svg" alt="" />
+              <img className="plus" src="\assets\images\icon-plus.svg" alt="" />
             </div>
+            <button className="add-cart"><img src="\assets\images\icon-cart.svg" alt="" />Add to cart</button>
           </div>
         </div>
       </div>

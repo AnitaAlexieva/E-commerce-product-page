@@ -46,9 +46,10 @@ nav{
     gap:100px;
     align-items: center;
     margin-top: 50px;
+    justify-content: center;
 }
 
-.sneaker{
+.sneakers{
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -70,6 +71,38 @@ nav{
     border-radius: 10px;
 }
 
+h1{
+    width: 400px;
+}
+
+.promotion{
+    display: flex;
+    align-items: center;
+}
+.descr{
+    width: 400px;
+}
+
+.buying{
+    display: flex;
+    gap: 20px;
+}
+
+.count{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.plus{
+    display: flex;
+    gap: 20px;
+}
+
+.minus{
+    width: 10px;
+    height: 5px;
+}
 .attribution {
     font-size: 11px;
     text-align: center;
