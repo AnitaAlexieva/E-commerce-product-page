@@ -169,10 +169,17 @@ h2{
     display: flex;
     gap: 20px;
 }
-
+.plus:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
 .minus{
     width: 10px;
     height: 5px;
+}
+.minus:hover{
+    cursor: pointer;
+    opacity: 0.7;
 }
 .attribution {
     font-size: 11px;
