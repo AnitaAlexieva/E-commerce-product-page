@@ -37,6 +37,11 @@ h6{
     align-items: center;
 }
 
+.add-cart:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
 .add-cart img{
    margin-right: 15px;
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
