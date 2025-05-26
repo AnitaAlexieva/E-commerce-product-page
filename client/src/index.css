@@ -108,8 +108,17 @@ nav{
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    
 }
 
+.mini-sneakers img:hover{
+    cursor: pointer;
+    filter: opacity(0.6);
+}
+/* .mini-sneakers img:active{
+    border : 2px solid  hsl(26, 100%, 55%);
+    filter: opacity(0.6);
+} */
 .mini{
     width: 80px;
     border-radius: 10px;
