@@ -85,6 +85,7 @@ nav{
 .avatar{
     width: 40px;
     margin-top: -10px;
+    border: 2px solid white;
 }
 
 .avatar:hover{
@@ -122,10 +123,10 @@ nav{
     cursor: pointer;
     filter: opacity(0.6);
 }
-/* .mini-sneakers img:active{
+.mini-sneakers img:active{
     border : 2px solid  hsl(26, 100%, 55%);
     filter: opacity(0.6);
-} */
+}
 .mini{
     width: 80px;
     border-radius: 10px;

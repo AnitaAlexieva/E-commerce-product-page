@@ -15,10 +15,10 @@ export default function Content() {
         <div className="sneakers">
           <img className="large-sneakers" src="\assets\images\image-product-1.jpg" alt="" />
           <div className="mini-sneakers">
-            <img className="mini" src="\assets\images\image-product-1-thumbnail.jpg" alt="" />
-            <img className="mini" src="\assets\images\image-product-2-thumbnail.jpg" alt="" />
-            <img className="mini" src="\assets\images\image-product-3-thumbnail.jpg" alt="" />
-            <img className="mini" src="\assets\images\image-product-4-thumbnail.jpg" alt="" />
+            <button><img className="mini" src="\assets\images\image-product-1-thumbnail.jpg" alt="" /></button>
+            <button><img className="mini" src="\assets\images\image-product-2-thumbnail.jpg" alt="" /></button>
+            <button><img className="mini" src="\assets\images\image-product-3-thumbnail.jpg" alt="" /></button>
+            <button><img className="mini" src="\assets\images\image-product-4-thumbnail.jpg" alt="" /></button>
           </div>
         </div>
         <div className="sneakers-info">
