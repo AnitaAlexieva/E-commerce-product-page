@@ -22,7 +22,7 @@ export default function Content() {
           <li>About</li>
           <li>Contact</li>
         </ul>
-        <div className="cart-count">
+        <div className={count<=0 ? 'cart-count-0':'cart-count'}>
           <p>{count}</p>
         </div>
         <ul className="profile">
