@@ -31,6 +31,16 @@ h6{
     background-color: white;
 }
 
+.filled-cart{
+    position: absolute;
+    right: 120px;
+    top: 120px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    width: 350px;
+    height: 230px;
+    z-index: 3;
+    background-color: white;
+}
 .count-number{
     color: black;
     font-weight: 600;
@@ -247,6 +257,47 @@ button{
     padding-left: 10px;
     font-weight: 800;
     font-size: 15px;
+}
+
+.filled-cart h5{
+    border-bottom: 1px solid rgb(205, 199, 199);
+    padding-bottom: 20px;
+    padding-left: 10px;
+    font-weight: 800;
+    font-size: 15px;
+}
+.content-cart{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.info h6{
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.filled-cart button{
+    margin-top: 20px;
+    background-color:hsl(26, 100%, 55%) ;
+    border: none;
+    width: 320px;
+    margin-left: 17px;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 15px;
+    
+}
+.delete-img{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.item-img{
+    width: 60px;
+    
 }
 .attribution {
     font-size: 11px;
