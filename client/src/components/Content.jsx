@@ -29,9 +29,21 @@ export default function Content() {
           <li><img className="bacsket" src="\assets\images\icon-cart.svg" alt="basket" /></li>
           <li><img className="avatar" src="\assets\images\image-avatar.png" alt="person-photo" /></li>
         </ul>
-        <div className="empty-cart"> 
+        {/* <div className="empty-cart"> 
             <h5>Cart</h5>
             <h6>Your cart is empty</h6>
+        </div> */}
+        <div className="filled-cart">
+          <h5>Cart</h5>
+          <div className="content-cart">
+            <img className="item-img" src="\assets\images\image-product-1-thumbnail.jpg" alt="" />
+            <div className="info">
+              <h6>Fall Limited Edition Sneaker</h6>
+              <h6>$125.00 x 3 <span>$375.00</span></h6>
+            </div>
+            <img className="delete-img" src="\assets\images\icon-delete.svg" alt="" />
+          </div>
+          <button>Checkout</button>
         </div>
       </nav>
       <div className="content">
