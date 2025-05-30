@@ -43,7 +43,7 @@ export default function Content() {
               <h6>Fall Limited Edition Sneaker</h6>
               <h6>$125.00 x {count} <span>$375.00</span></h6>
             </div>
-            <img className="delete-img" src="\assets\images\icon-delete.svg" alt="" />
+            <img onClick={() => setCount(count-1)} className="delete-img" src="\assets\images\icon-delete.svg" alt="" />
           </div>
           <button>Checkout</button>
         </div>
