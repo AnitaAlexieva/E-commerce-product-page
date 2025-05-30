@@ -1,8 +1,14 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function Content() {
   const [count, setCount] = useState(0)
   const [isCartActive, setIsCartActive] = useState(false)
+  const [price, setPrice] = useState('125.00');
+  const [sum, setSum] = useState(price)
+
+  useEffect(() => {
+    setSum(price * count)
+  }, [count])
 
   const isUndurNull = () => {
     if (count <= 0) {
@@ -44,7 +50,7 @@ export default function Content() {
                 <img className="item-img" src="\assets\images\image-product-1-thumbnail.jpg" alt="" />
                 <div className="info">
                   <h6>Fall Limited Edition Sneaker</h6>
-                  <h6>$125.00 x {count} <span>$375.00</span></h6>
+                  <h6>${price} x {count} <span>${sum}</span></h6>
                 </div>
                 <img onClick={() => setCount(count - 1)} className="delete-img" src="\assets\images\icon-delete.svg" alt="" />
               </div>
@@ -72,7 +78,7 @@ export default function Content() {
             <h2>$125.00</h2>
             <p>50%</p>
           </div>
-          <h6>$250.00</h6>
+          <h6>${price}</h6>
           <div className="buying">
             <div className="count">
               <button><img className="minus" onClick={isUndurNull} src="\assets\images\icon-minus.svg" alt="" /></button>
