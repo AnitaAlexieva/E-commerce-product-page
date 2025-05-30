@@ -2,6 +2,7 @@ import { useState } from "react"
 
 export default function Content() {
   const [count, setCount] = useState(0)
+  const [isCartActive, setIsCartActive] = useState(false)
 
   const isUndurNull = () => {
     if (count <= 0) {
@@ -22,32 +23,35 @@ export default function Content() {
           <li>About</li>
           <li>Contact</li>
         </ul>
-        <div className={count<=0 ? 'cart-count-0':'cart-count'}>
+        <div className={count <= 0 ? 'cart-count-0' : 'cart-count'}>
           <p>{count}</p>
         </div>
         <ul className="profile">
-          <li><img className="bacsket" src="\assets\images\icon-cart.svg" alt="basket" /></li>
+          <li><img onClick={() => setIsCartActive(prev => !prev)} className="bacsket" src="\assets\images\icon-cart.svg" alt="basket" /></li>
           <li><img className="avatar" src="\assets\images\image-avatar.png" alt="person-photo" /></li>
         </ul>
-        {count <= 0 ? (
-          <div className="empty-cart"> 
-            <h5>Cart</h5>
-            <h6>Your cart is empty</h6>
-        </div>
-        ) : (
-        <div className="filled-cart">
-          <h5>Cart</h5>
-          <div className="content-cart">
-            <img className="item-img" src="\assets\images\image-product-1-thumbnail.jpg" alt="" />
-            <div className="info">
-              <h6>Fall Limited Edition Sneaker</h6>
-              <h6>$125.00 x {count} <span>$375.00</span></h6>
+        {isCartActive && (
+
+          count <= 0 ? (
+            <div className="empty-cart">
+              <h5>Cart</h5>
+              <h6>Your cart is empty</h6>
             </div>
-            <img onClick={() => setCount(count-1)} className="delete-img" src="\assets\images\icon-delete.svg" alt="" />
-          </div>
-          <button>Checkout</button>
-        </div>
-      )}
+          ) : (
+            <div className="filled-cart">
+              <h5>Cart</h5>
+              <div className="content-cart">
+                <img className="item-img" src="\assets\images\image-product-1-thumbnail.jpg" alt="" />
+                <div className="info">
+                  <h6>Fall Limited Edition Sneaker</h6>
+                  <h6>$125.00 x {count} <span>$375.00</span></h6>
+                </div>
+                <img onClick={() => setCount(count - 1)} className="delete-img" src="\assets\images\icon-delete.svg" alt="" />
+              </div>
+              <button>Checkout</button>
+            </div>
+          )
+        )}
       </nav>
       <div className="content">
         <div className="sneakers">
