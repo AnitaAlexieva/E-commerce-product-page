@@ -41,7 +41,7 @@ export default function Content() {
             <img className="item-img" src="\assets\images\image-product-1-thumbnail.jpg" alt="" />
             <div className="info">
               <h6>Fall Limited Edition Sneaker</h6>
-              <h6>$125.00 x 3 <span>$375.00</span></h6>
+              <h6>$125.00 x {count} <span>$375.00</span></h6>
             </div>
             <img className="delete-img" src="\assets\images\icon-delete.svg" alt="" />
           </div>

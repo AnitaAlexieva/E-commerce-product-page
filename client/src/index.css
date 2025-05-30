@@ -276,6 +276,11 @@ button{
     margin-top: 5px;
 }
 
+.info h6 span{
+    color: black;
+    font-weight: 800;
+}
+
 .filled-cart button{
     margin-top: 20px;
     background-color:hsl(26, 100%, 55%) ;
