@@ -5,6 +5,7 @@ export default function Content() {
   const [isCartActive, setIsCartActive] = useState(false)
   const [price, setPrice] = useState('125.00');
   const [sum, setSum] = useState(price)
+  const [largeImage, setLargeImage] = useState('/assets/images/image-product-1.jpg')
 
   useEffect(() => {
     setSum(price * count)
@@ -61,12 +62,12 @@ export default function Content() {
       </nav>
       <div className="content">
         <div className="sneakers">
-          <img className="large-sneakers" src="\assets\images\image-product-1.jpg" alt="" />
+          <img className="large-sneakers" src={largeImage} alt="" />
           <div className="mini-sneakers">
-            <button><img className="mini" src="\assets\images\image-product-1-thumbnail.jpg" alt="" /></button>
-            <button><img className="mini" src="\assets\images\image-product-2-thumbnail.jpg" alt="" /></button>
-            <button><img className="mini" src="\assets\images\image-product-3-thumbnail.jpg" alt="" /></button>
-            <button><img className="mini" src="\assets\images\image-product-4-thumbnail.jpg" alt="" /></button>
+            <button onClick={() => setLargeImage("/assets/images/image-product-1.jpg")}><img className="mini" src="\assets\images\image-product-1-thumbnail.jpg" alt="" /></button>
+            <button onClick={() => setLargeImage("/assets/images/image-product-2.jpg")}><img className="mini" src="\assets\images\image-product-2-thumbnail.jpg" alt="" /></button>
+            <button onClick={() => setLargeImage("/assets/images/image-product-3.jpg")}><img className="mini" src="\assets\images\image-product-3-thumbnail.jpg" alt="" /></button>
+            <button onClick={() => setLargeImage("/assets/images/image-product-4.jpg")}><img className="mini" src="\assets\images\image-product-4-thumbnail.jpg" alt="" /></button>
           </div>
         </div>
         <div className="sneakers-info">
