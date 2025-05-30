@@ -1,26 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Kumbh+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
 
-h1,h2,h3,h6,h5, p{
+h1,
+h2,
+h3,
+h6,
+h5,
+p {
     font-family: "Kumbh Sans", sans-serif;
 }
 
-h3,h6,p{
-    color:  hsl(219, 9%, 45%);
+h3,
+h6,
+p {
+    color: hsl(219, 9%, 45%);
 }
 
-h3{
+h3 {
     font-weight: 700;
     font-size: 15px;
     letter-spacing: 1px;
 }
 
-h6{
+h6 {
     text-decoration: line-through;
     font-size: 15px;
     margin: 0;
 }
 
-.empty-cart{
+.empty-cart {
     position: absolute;
     right: 120px;
     top: 120px;
@@ -31,7 +38,7 @@ h6{
     background-color: white;
 }
 
-.filled-cart{
+.filled-cart {
     position: absolute;
     right: 120px;
     top: 120px;
@@ -41,13 +48,15 @@ h6{
     z-index: 3;
     background-color: white;
 }
-.count-number{
+
+.count-number {
     color: black;
     font-weight: 600;
     text-align: center;
     width: 20px;
 }
-.add-cart{
+
+.add-cart {
     font-size: 14px;
     width: 240px;
     display: flex;
@@ -60,17 +69,17 @@ h6{
     align-items: center;
 }
 
-.add-cart:hover{
+.add-cart:hover {
     cursor: pointer;
     opacity: 0.7;
 }
 
-.add-cart img{
-   margin-right: 15px;
+.add-cart img {
+    margin-right: 15px;
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
 }
 
-ul{
+ul {
     display: flex;
     gap: 30px;
     list-style: none;
@@ -78,101 +87,110 @@ ul{
     padding: 0;
 }
 
-ul li{
+ul li {
     padding: 30px 0;
-    color:  hsl(219, 9%, 45%);
+    color: hsl(219, 9%, 45%);
 }
 
-ul li:hover{
+ul li:hover {
     cursor: pointer;
 }
 
-.pages li:hover{
+.pages li:hover {
     border-bottom: 3px solid hsl(26, 100%, 55%);
 }
-nav{
+
+nav {
     justify-content: space-between;
     display: flex;
     margin: 40px 140px 20px 140px;
     min-height: 90px;
-    border-bottom:1px solid rgb(198, 198, 198);
+    border-bottom: 1px solid rgb(198, 198, 198);
     z-index: 2;
 }
 
-.logo{
+.logo {
     margin-right: 40px;
     margin-top: -4px;
 }
 
-.avatar{
+.avatar {
     width: 40px;
     margin-top: -10px;
     border: 2px solid white;
     position: relative;
 }
 
-.avatar:hover{
-    border: 2px solid  hsl(26, 100%, 55%);
+.avatar:hover {
+    border: 2px solid hsl(26, 100%, 55%);
     border-radius: 50px;
 }
 
-.content{
+.content {
     display: flex;
-    gap:100px;
+    gap: 100px;
     align-items: center;
     margin-top: 50px;
     justify-content: center;
     z-index: 1;
 }
 
-.sneakers{
+.sneakers {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.large-sneakers{
+.large-sneakers {
     width: 400px;
     border-radius: 20px;
 }
 
-.mini-sneakers{
+.mini-sneakers {
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    
+    margin: 0;
 }
 
-.mini-sneakers img:hover{
+.mini-sneakers img:hover {
     cursor: pointer;
     filter: opacity(0.6);
 }
-.mini-sneakers img:active{
-    border : 2px solid  hsl(26, 100%, 55%);
-    filter: opacity(0.6);
-}
-.mini{
+
+.mini {
     width: 80px;
     border-radius: 10px;
 }
 
-h1{
+.mini-active {
+    width: 80px;
+    filter: opacity(0.6);
+    border-radius: 7px;
+}
+
+.active-wrapper{
+    border-radius: 10px;
+    border: 2px solid hsl(26, 100%, 55%);
+    height: 80px;
+}
+h1 {
     width: 400px;
     font-weight: 800;
 }
 
-h2{
+h2 {
     font-weight: 700;
     margin: 0;
 }
 
-.promotion{
+.promotion {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.promotion p{
+.promotion p {
     background: black;
     padding: 2px 8px;
     border-radius: 5px;
@@ -181,44 +199,49 @@ h2{
     font-weight: 600;
 }
 
-.descr{
+.descr {
     width: 400px;
 }
 
-.buying{
+.buying {
     display: flex;
     gap: 20px;
     margin-top: 30px;
 }
 
-.count{
+.count {
     display: flex;
     gap: 50px;
     align-items: center;
 }
 
-.plus{
+.plus {
     display: flex;
     gap: 20px;
 }
-.plus:hover{
+
+.plus:hover {
     cursor: pointer;
     opacity: 0.7;
 }
 
-button{
+button {
     border: none;
+    padding: 0;
+    background-color: transparent;
 }
-.minus{
+
+.minus {
     width: 10px;
     height: 5px;
 }
-.minus:hover{
+
+.minus:hover {
     cursor: pointer;
     opacity: 0.7;
 }
 
-.cart-count{
+.cart-count {
     position: absolute;
     right: 210px;
     top: 60px;
@@ -231,7 +254,7 @@ button{
     padding-bottom: 2px;
 }
 
-.cart-count p{
+.cart-count p {
     margin: 0;
     height: 15px;
     text-align: center;
@@ -240,7 +263,7 @@ button{
     font-weight: 600;
 }
 
-.cart-count-0{
+.cart-count-0 {
     display: none;
 }
 
@@ -251,7 +274,7 @@ button{
     text-decoration: none;
 }
 
-.empty-cart h5{
+.empty-cart h5 {
     border-bottom: 1px solid rgb(205, 199, 199);
     padding-bottom: 20px;
     padding-left: 10px;
@@ -259,31 +282,33 @@ button{
     font-size: 15px;
 }
 
-.filled-cart h5{
+.filled-cart h5 {
     border-bottom: 1px solid rgb(205, 199, 199);
     padding-bottom: 20px;
     padding-left: 10px;
     font-weight: 800;
     font-size: 15px;
 }
-.content-cart{
+
+.content-cart {
     display: flex;
     justify-content: space-evenly;
     gap: 10px;
 }
-.info h6{
+
+.info h6 {
     text-decoration: none;
     margin-top: 5px;
 }
 
-.info h6 span{
+.info h6 span {
     color: black;
     font-weight: 800;
 }
 
-.filled-cart button{
+.filled-cart button {
     margin-top: 20px;
-    background-color:hsl(26, 100%, 55%) ;
+    background-color: hsl(26, 100%, 55%);
     border: none;
     width: 320px;
     margin-left: 17px;
@@ -292,18 +317,20 @@ button{
     font-weight: 800;
     font-family: "Kumbh Sans", sans-serif;
     font-size: 15px;
-    
+
 }
-.delete-img{
+
+.delete-img {
     width: 20px;
     height: 20px;
     margin-top: 10px;
 }
 
-.item-img{
+.item-img {
     width: 60px;
-    
+
 }
+
 .attribution {
     font-size: 11px;
     text-align: center;
