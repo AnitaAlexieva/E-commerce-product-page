@@ -29,10 +29,12 @@ export default function Content() {
           <li><img className="bacsket" src="\assets\images\icon-cart.svg" alt="basket" /></li>
           <li><img className="avatar" src="\assets\images\image-avatar.png" alt="person-photo" /></li>
         </ul>
-        {/* <div className="empty-cart"> 
+        {count <= 0 ? (
+          <div className="empty-cart"> 
             <h5>Cart</h5>
             <h6>Your cart is empty</h6>
-        </div> */}
+        </div>
+        ) : (
         <div className="filled-cart">
           <h5>Cart</h5>
           <div className="content-cart">
@@ -45,6 +47,7 @@ export default function Content() {
           </div>
           <button>Checkout</button>
         </div>
+      )}
       </nav>
       <div className="content">
         <div className="sneakers">
