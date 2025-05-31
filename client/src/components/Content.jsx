@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Attribution from "./Attribution"
 
 export default function Content() {
   const [count, setCount] = useState(0)
@@ -146,6 +147,9 @@ export default function Content() {
             <button onClick={() => setCount(count + 1)} className="add-cart"><img src="\assets\images\icon-cart.svg" alt="" />Add to cart</button>
           </div>
         </div>
+      <Attribution isOpenLarge={isOpen}/>
+
+
       </div>
     </>
   )
