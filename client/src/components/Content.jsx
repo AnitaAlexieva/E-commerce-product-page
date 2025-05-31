@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Lightbox from "./Lightbox";
 import Attribution from "./Attribution"
 
 export default function Content() {
@@ -151,6 +152,7 @@ export default function Content() {
 
 
       </div>
+      <Lightbox isOpenLarge={isOpen} />
     </>
   )
 }
