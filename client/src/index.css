@@ -334,6 +334,9 @@ button {
 .attribution {
     font-size: 11px;
     text-align: center;
+    left: 650px;
+    position: absolute;
+    top: 800px;
 }
 
 .attribution a {
