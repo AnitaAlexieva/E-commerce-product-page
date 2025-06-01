@@ -128,11 +128,37 @@ nav {
 
 .content {
     display: flex;
+    position: relative;
     gap: 100px;
     align-items: center;
     margin-top: 50px;
     justify-content: center;
     z-index: 1;
+}
+
+.dark-app-wrapper {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(30%);
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.lightbox-active {
+     z-index: 10;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+}
+
+.lightbox-hidden {
+    display: none;
 }
 
 .sneakers {
@@ -174,6 +200,7 @@ nav {
     border: 2px solid hsl(26, 100%, 55%);
     height: 80px;
 }
+
 h1 {
     width: 400px;
     font-weight: 800;
