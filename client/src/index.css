@@ -195,7 +195,35 @@ nav {
     border-radius: 7px;
 }
 
-.active-wrapper{
+/* .move-btn{
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+} */
+
+.next-btn{
+    position: absolute;
+    top: 200px;
+    left: 375px;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.previous-btn{
+    position: absolute;
+    top: 200px;
+    right: 375px;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.close-img{
+    filter: brightness(15);
+}
+
+.active-wrapper {
     border-radius: 10px;
     border: 2px solid hsl(26, 100%, 55%);
     height: 80px;

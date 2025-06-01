@@ -7,11 +7,11 @@ export default function Lightbox({
       const [activeMiniImg, setActiveMiniImg] = useState("\assets\images\image-product-1-thumbnail.jpg")
     return (
         <div className={isOpenLarge ? "lightbox-active" : "lightbox-hidden"}>
-            <button><img src="\assets\images\icon-close.svg" alt="" /></button>
+            <button><img src="\assets\images\icon-close.svg" className="close-img" alt="" /></button>
             <div className="sneakers">
                 <img className="large-sneakers" src={largeImage} alt="" />
-                <button><img className="next" src="\assets\images\icon-next.svg" alt="" /></button>
-                <button><img className="previous" src="\assets\images\icon-previous.svg" alt="" /></button>
+                <button className="next-btn"><img src="\assets\images\icon-next.svg" alt="" /></button>
+                <button className="previous-btn"><img src="\assets\images\icon-previous.svg" alt="" /></button>
                 <div className="mini-sneakers">
                     <button
                         onClick={() => {
