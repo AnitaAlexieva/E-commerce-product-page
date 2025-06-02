@@ -23,10 +23,14 @@ export default function Content() {
       setCount(count - 1);
     }
   }
+
+  const isOpenFunc = (boolean) =>{
+      setIsOpen(boolean)
+  }
   return (
     <>
 
-      <div className={isOpen ? "dark-app-wrapper" : "app-wrapper"}>
+      <div className={(isOpen) ? "dark-app-wrapper" : "app-wrapper"}>
 
         <nav className={isOpen ? "dark-nav" : ""}>
           <ul className="pages">
@@ -157,7 +161,7 @@ export default function Content() {
 
 
       </div>
-      <Lightbox isOpenLarge={isOpen} />
+      <Lightbox isOpenLarge={isOpen}  isOpenFunct = {setIsOpen}/>
     </>
   )
 }

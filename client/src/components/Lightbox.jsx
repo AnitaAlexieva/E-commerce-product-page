@@ -1,13 +1,16 @@
 import { useState } from "react";
 
 export default function Lightbox({
-    isOpenLarge
+    isOpenLarge,
+    isOpenFunct
 }) {
-     const [largeImage, setLargeImage] = useState('/assets/images/image-product-1.jpg')
-      const [activeMiniImg, setActiveMiniImg] = useState("\assets\images\image-product-1-thumbnail.jpg")
+    const [largeImage, setLargeImage] = useState('/assets/images/image-product-1.jpg')
+    const [activeMiniImg, setActiveMiniImg] = useState("\assets\images\image-product-1-thumbnail.jpg")
+
+
     return (
-        <div className={isOpenLarge ? "lightbox-active" : "lightbox-hidden"}>
-            <button><img src="\assets\images\icon-close.svg" className="close-img" alt="" /></button>
+        <div className={(isOpenLarge) ? "lightbox-active" : "lightbox-hidden"}>
+            <button><img src="\assets\images\icon-close.svg" onClick={() => isOpenFunct(prev => !prev)} className="close-img" alt="" /></button>
             <div className="sneakers">
                 <img className="large-sneakers" src={largeImage} alt="" />
                 <button className="next-btn"><img src="\assets\images\icon-next.svg" alt="" /></button>
