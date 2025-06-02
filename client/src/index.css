@@ -27,6 +27,9 @@ h6 {
     margin: 0;
 }
 
+button{
+    border: none ;
+}
 .empty-cart {
     position: absolute;
     right: 120px;
@@ -195,11 +198,6 @@ nav {
     border-radius: 7px;
 }
 
-/* .move-btn{
-    background-color: white;
-    padding: 10px;
-    border-radius: 50px;
-} */
 
 .next-btn{
     position: absolute;
@@ -223,6 +221,9 @@ nav {
     filter: brightness(15);
 }
 
+.close-img:hover{
+    cursor: pointer;
+}
 .active-wrapper {
     border-radius: 10px;
     border: 2px solid hsl(26, 100%, 55%);
