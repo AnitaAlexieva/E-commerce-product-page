@@ -207,7 +207,12 @@ nav {
     padding: 10px 15px;
     border-radius: 50%;
 }
-
+.next-btn:hover{
+    cursor: pointer;
+}
+.next-btn:hover img {
+  filter: brightness(0) saturate(100%) invert(58%) sepia(89%) saturate(1412%) hue-rotate(352deg) brightness(99%) contrast(95%);
+}
 .previous-btn{
     position: absolute;
     top: 200px;
