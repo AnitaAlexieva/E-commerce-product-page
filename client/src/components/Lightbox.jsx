@@ -32,6 +32,9 @@ export default function Lightbox({
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
   }
 
+  const goToPrevious = () =>{
+    setCurrentIndex((prevIndex) => (prevIndex - 1) % images.length)
+  }
 
     return (
         <div className={(isOpenLarge) ? "lightbox-active" : "lightbox-hidden"}>
@@ -39,6 +42,7 @@ export default function Lightbox({
             <div className="sneakers">
                 <img className="large-sneakers" src={largeImage} alt="" />
                 <button className="next-btn" onClick={goToNext}><img src="\assets\images\icon-next.svg" alt="" /></button>
+                <button className="previous-btn" onClick={goToPrevious}><img src="\assets\images\icon-previous.svg" alt="" /></button>
                 <div className="mini-sneakers">
                     <button
                         onClick={() => {
