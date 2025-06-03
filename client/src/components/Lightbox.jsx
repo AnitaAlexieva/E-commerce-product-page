@@ -17,7 +17,7 @@ export default function Lightbox({
     "/assets/images/image-product-3-thumbnail.jpg",
     "/assets/images/image-product-4-thumbnail.jpg"
   ];
-  
+
     const [largeImage, setLargeImage] = useState(images[0])
     const [activeMiniImg, setActiveMiniImg] = useState(thumbnails[0])
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,14 +26,14 @@ export default function Lightbox({
   useEffect(() =>{
     setActiveMiniImg(thumbnails[currentIndex]);
     setLargeImage(images[currentIndex])
-  })
+  },[currentIndex])
 
   const goToNext = () =>{
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
   }
 
   const goToPrevious = () =>{
-    setCurrentIndex((prevIndex) => (prevIndex - 1) % images.length)
+    setCurrentIndex((prevIndex) => prevIndex === 0 ? images.length - 1 : prevIndex - 1)
   }
 
     return (
