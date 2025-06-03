@@ -1,11 +1,36 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Lightbox({
     isOpenLarge,
     isOpenFunct
 }) {
-    const [largeImage, setLargeImage] = useState('/assets/images/image-product-1.jpg')
-    const [activeMiniImg, setActiveMiniImg] = useState("\assets\images\image-product-1-thumbnail.jpg")
+    const images = [
+    "/assets/images/image-product-1.jpg",
+    "/assets/images/image-product-2.jpg",
+    "/assets/images/image-product-3.jpg",
+    "/assets/images/image-product-4.jpg"
+  ];
+
+  const thumbnails = [
+    "/assets/images/image-product-1-thumbnail.jpg",
+    "/assets/images/image-product-2-thumbnail.jpg",
+    "/assets/images/image-product-3-thumbnail.jpg",
+    "/assets/images/image-product-4-thumbnail.jpg"
+  ];
+  
+    const [largeImage, setLargeImage] = useState(images[0])
+    const [activeMiniImg, setActiveMiniImg] = useState(thumbnails[0])
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+
+  useEffect(() =>{
+    setActiveMiniImg(thumbnails[currentIndex]);
+    setLargeImage(images[currentIndex])
+  })
+
+  const goToNext = () =>{
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+  }
 
 
     return (
@@ -13,8 +38,7 @@ export default function Lightbox({
             <button><img src="\assets\images\icon-close.svg" onClick={() => isOpenFunct(prev => !prev)} className="close-img" alt="" /></button>
             <div className="sneakers">
                 <img className="large-sneakers" src={largeImage} alt="" />
-                <button className="next-btn"><img src="\assets\images\icon-next.svg" alt="" /></button>
-                <button className="previous-btn"><img src="\assets\images\icon-previous.svg" alt="" /></button>
+                <button className="next-btn" onClick={goToNext}><img src="\assets\images\icon-next.svg" alt="" /></button>
                 <div className="mini-sneakers">
                     <button
                         onClick={() => {
