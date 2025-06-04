@@ -143,10 +143,12 @@ export default function Content() {
             <p className="descr">These low-profile sneakers are your perfect casual wear companion. Featuring a
               durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
             <div className="promotion">
-              <h2>$125.00</h2>
-              <p>50%</p>
-            </div>
+              <div className="discount">
+                <h2>$125.00</h2>
+                <p>50%</p>
+              </div>
             <h6>${price}</h6>
+            </div>
             <div className="buying">
               <div className="count">
                 <button><img className="minus" onClick={isUndurNull} src="\assets\images\icon-minus.svg" alt="" /></button>
