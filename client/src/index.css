@@ -534,4 +534,21 @@ button {
         margin-top: 30px;
         margin-right: 10px;
     }
+    .empty-cart{
+        left: 30px;
+        width: 750px;
+        height: 730px;
+        top: 250px;
+        border-radius: 30px;
+    }
+
+    .empty-cart h5{
+        font-size: 45px;
+        padding-left: 60px;
+        border-bottom: 4px solid rgb(205, 199, 199);
+        padding-bottom: 50px;    }
+
+    .empty-cart h6{
+        padding-top: 160px;
+    }
 }
