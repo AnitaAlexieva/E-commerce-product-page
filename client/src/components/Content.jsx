@@ -34,6 +34,7 @@ export default function Content() {
 
         <nav>
           <div className="left-nav">
+            <img src="\assets\images\icon-menu.svg" className="menu-icon" alt="" />
             <img src="\assets\images\logo.svg" className="logo" alt="logo" />
           <ul className="pages">
             <li>Collections</li>
