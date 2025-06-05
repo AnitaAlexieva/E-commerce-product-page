@@ -32,15 +32,17 @@ export default function Content() {
 
       <div className={(isOpen) ? "dark-app-wrapper" : "app-wrapper"}>
 
-        <nav className={isOpen ? "dark-nav" : ""}>
+        <nav className="dark-nav">
+          <div className="left-nav">
+            <img src="\assets\images\logo.svg" className="logo" alt="logo" />
           <ul className="pages">
-            <li className="logo"><img src="\assets\images\logo.svg" alt="logo" /></li>
             <li>Collections</li>
             <li>Men</li>
             <li>Women</li>
             <li>About</li>
             <li>Contact</li>
           </ul>
+          </div>
           <div className={count <= 0 ? 'cart-count-0' : 'cart-count'}>
             <p>{count}</p>
           </div>

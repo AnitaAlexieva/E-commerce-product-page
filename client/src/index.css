@@ -114,9 +114,15 @@ nav {
 
 .logo {
     margin-right: 40px;
-    margin-top: -4px;
+    margin-top: 20px;
+    height: 30px;
+    width: 200px;
 }
 
+.left-nav{
+    display: flex;
+    gap: 20px;
+}
 .avatar {
     width: 40px;
     margin-top: -10px;
