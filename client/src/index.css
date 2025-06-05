@@ -592,4 +592,17 @@ button {
         height: 50px;
         margin-top: 40px;
     }
+    .dark-app-wrapper{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        filter: none;
+        pointer-events: none;
+        background-color: white;
+    }
+    .lightbox-active{
+        display: none;
+    }
 }

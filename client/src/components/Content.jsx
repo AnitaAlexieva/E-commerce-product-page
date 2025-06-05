@@ -77,6 +77,7 @@ export default function Content() {
         <div className="content">
           <div className="sneakers">
             <button><img className="large-sneakers" src={largeImage} onClick={() => setIsOpen(true)} alt="" /></button>
+            
             <div className="mini-sneakers">
               <button
                 onClick={() => {
