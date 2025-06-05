@@ -468,4 +468,15 @@ button {
         border-radius: 15px;
         font-size: 37px;
     }
+    .minus {
+        width: 40px;
+        height: 15px;
+    }
+    .plus{
+        width: 40px;
+    }
+    .count-number{
+        margin: 50px 220px;
+        font-size: 50px;
+    }
 }
