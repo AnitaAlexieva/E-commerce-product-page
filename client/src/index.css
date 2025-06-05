@@ -505,4 +505,14 @@ button {
         margin-right: 25px;
         width: 50px;
     }
+    .pages{
+        display: none;
+    }
+    nav{
+        margin: 40px 40px 20px 40px;
+    }
+    .logo{
+        height: 60px;
+        width: 350px;
+    }
 }

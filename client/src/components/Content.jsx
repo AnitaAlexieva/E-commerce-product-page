@@ -32,7 +32,7 @@ export default function Content() {
 
       <div className={(isOpen) ? "dark-app-wrapper" : "app-wrapper"}>
 
-        <nav className="dark-nav">
+        <nav>
           <div className="left-nav">
             <img src="\assets\images\logo.svg" className="logo" alt="logo" />
           <ul className="pages">
