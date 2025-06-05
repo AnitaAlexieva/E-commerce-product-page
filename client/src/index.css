@@ -546,9 +546,50 @@ button {
         font-size: 45px;
         padding-left: 60px;
         border-bottom: 4px solid rgb(205, 199, 199);
-        padding-bottom: 50px;    }
+        padding-bottom: 50px;
+    }
 
     .empty-cart h6{
         padding-top: 160px;
+    }
+
+    .filled-cart{
+        left: 30px;
+        width: 750px;
+        height: 730px;
+        top: 250px;
+        border-radius: 30px;
+    }
+
+    .filled-cart h5{
+         font-size: 45px;
+        padding-left: 60px;
+        border-bottom: 4px solid rgb(205, 199, 199);
+        padding-bottom: 50px;
+    }
+
+    .filled-cart button{
+        font-size: 54px;
+        width: 680px;
+        justify-content: center;
+        padding: 40px 0;
+        border-radius: 30px;
+        font-family: "Kumbh Sans", sans-serif;
+        font-weight: 700;
+        margin-left: 35px;
+        margin-top: 100px;
+    }
+    .content-cart{
+        margin-top: 100px;
+        padding: 0 30px;
+    }
+    .item-img {
+        width: 80px;
+        height: 100px;
+    }
+    .delete-img {
+        width: 40px;
+        height: 50px;
+        margin-top: 40px;
     }
 }
