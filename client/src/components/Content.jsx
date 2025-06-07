@@ -75,7 +75,8 @@ export default function Content() {
         <div className="content">
           <div className="sneakers">
             <button><img className="large-sneakers" src={largeImage} onClick={() => setIsOpen(true)} alt="" /></button>
-            
+             <button className="next-btn" onClick={goToNext}><img src="\assets\images\icon-next.svg" alt="" /></button>
+                <button className="previous-btn" onClick={goToPrevious}><img src="\assets\images\icon-previous.svg" alt="" /></button>
             <div className="mini-sneakers">
               <button
                 onClick={() => {
