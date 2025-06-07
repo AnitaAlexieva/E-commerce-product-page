@@ -8,8 +8,6 @@ export default function Content() {
   const [isCartActive, setIsCartActive] = useState(false)
   const [price, setPrice] = useState('125.00');
   const [sum, setSum] = useState(price)
-  const [largeImage, setLargeImage] = useState('/assets/images/image-product-1.jpg')
-  const [activeMiniImg, setActiveMiniImg] = useState("\assets\images\image-product-1-thumbnail.jpg")
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -24,6 +22,37 @@ export default function Content() {
     }
   }
 
+    const images = [
+    "/assets/images/image-product-1.jpg",
+    "/assets/images/image-product-2.jpg",
+    "/assets/images/image-product-3.jpg",
+    "/assets/images/image-product-4.jpg"
+  ];
+
+  const thumbnails = [
+    "/assets/images/image-product-1-thumbnail.jpg",
+    "/assets/images/image-product-2-thumbnail.jpg",
+    "/assets/images/image-product-3-thumbnail.jpg",
+    "/assets/images/image-product-4-thumbnail.jpg"
+  ];
+
+    const [largeImage, setLargeImage] = useState(images[0])
+    const [activeMiniImg, setActiveMiniImg] = useState(thumbnails[0])
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+
+  useEffect(() =>{
+    setActiveMiniImg(thumbnails[currentIndex]);
+    setLargeImage(images[currentIndex])
+  },[currentIndex])
+
+  const goToNext = () =>{
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+  }
+
+ const goToPrevious = () =>{
+    setCurrentIndex((prevIndex) => prevIndex === 0 ? images.length - 1 : prevIndex - 1)
+  }
   
   return (
     <>
