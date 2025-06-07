@@ -609,4 +609,25 @@ button {
     top: 3000px;
     width: 200px;
   }
+
+  .previous-btn{
+    position: absolute;
+        top: 400px;
+        left: 10px;
+        background: white;
+        padding: 10px 15px;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+  }
+  .next-btn{
+    position: absolute;
+        top: 400px;
+        left: 700px;
+        background: white;
+        padding: 10px 15px;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+  }
 }
