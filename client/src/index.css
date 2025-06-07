@@ -592,17 +592,21 @@ button {
         height: 50px;
         margin-top: 40px;
     }
-    .dark-app-wrapper{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        filter: none;
-        pointer-events: none;
-        background-color: white;
-    }
-    .lightbox-active{
-        display: none;
-    }
+    .lightbox-active {
+    display: none !important;
+  }
+
+  .dark-app-wrapper {
+    filter: none !important;
+    pointer-events: auto !important;
+    background-color: white !important;
+    position: static !important;
+    width: 800px;
+    
+  }
+  .attribution{
+    left: 350px;
+    top: 3000px;
+    width: 200px;
+  }
 }

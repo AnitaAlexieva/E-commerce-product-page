@@ -24,9 +24,7 @@ export default function Content() {
     }
   }
 
-  const isOpenFunc = (boolean) =>{
-      setIsOpen(boolean)
-  }
+  
   return (
     <>
 
