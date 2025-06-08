@@ -74,7 +74,7 @@ export default function Content() {
           </ul>
           </div>
           <div className={openMenu ? "menu-nav-active" : "menu-nav-hidden"}>
-           <button><img className="close-menu" src="\assets\images\icon-close.svg" alt="" /></button>
+           <button><img onClick={() => setOpenMenu(false)} className="close-menu" src="\assets\images\icon-close.svg" alt="" /></button>
             <li>Collections</li>
             <li>Men</li>
             <li>Women</li>
