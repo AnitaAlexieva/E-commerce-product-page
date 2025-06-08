@@ -407,8 +407,16 @@ button {
     display: flex;
     align-items: center;
     gap: 20px;
-
 }
+
+    .menu-nav-active{
+        display: none;
+    }
+
+    .menu-nav-hidden{
+        display: none;
+    }
+
 
 .menu-icon{
     display: none;
@@ -629,5 +637,31 @@ button {
         border-radius: 50%;
         width: 80px;
         height: 80px;
+  }
+
+  .menu-nav-active{
+    display: block;
+    position: absolute;
+    background: white;
+    width: 450px;
+    left: 0;
+    top: 0;
+    padding: 50px;
+    z-index: 4;
+    height: 1000vh;
+  }
+  .menu-nav-hidden{
+    display: none;
+  }
+  .menu-nav-active li{
+    list-style: none;
+    margin: 60px 0;
+    font-weight: 700;
+    font-size: 45px;
+    font-family: "Kumbh Sans", sans-serif;
+  }
+  .close-menu{
+    width: 30px;
+    margin: 20px 0;
   }
 }
