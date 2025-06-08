@@ -71,6 +71,14 @@ export default function Content() {
             <li>Contact</li>
           </ul>
           </div>
+          <div className={openMenu ? "menu-nav-active" : "menu-nav-hidden"}>
+           <button><img className="close-menu" src="\assets\images\icon-close.svg" alt="" /></button>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </div>
           <div className={count <= 0 ? 'cart-count-0' : 'cart-count'}>
             <p>{count}</p>
           </div>
