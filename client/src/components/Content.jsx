@@ -9,6 +9,8 @@ export default function Content() {
   const [price, setPrice] = useState('125.00');
   const [sum, setSum] = useState(price)
   const [isOpen, setIsOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
+  
 
   useEffect(() => {
     setSum(price * count)
@@ -57,11 +59,11 @@ export default function Content() {
   return (
     <>
 
-      <div className={(isOpen) ? "dark-app-wrapper" : "app-wrapper"}>
-
+        <div className={(openMenu) ? "dark-mobile" : ""}>
+          <div className={(isOpen) ? "dark-app-wrapper" : "app-wrapper"}>
         <nav>
           <div className="left-nav">
-            <img src="\assets\images\icon-menu.svg" className="menu-icon" alt="" />
+            <img src="\assets\images\icon-menu.svg" onClick={() => setOpenMenu(true)} className="menu-icon" alt="" />
             <img src="\assets\images\logo.svg" className="logo" alt="logo" />
           <ul className="pages">
             <li>Collections</li>
@@ -201,7 +203,7 @@ export default function Content() {
         </div>
       <Attribution isOpenLarge={isOpen}/>
 
-
+        </div>
       </div>
       <Lightbox isOpenLarge={isOpen}  isOpenFunct = {setIsOpen}/>
     </>
