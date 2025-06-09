@@ -699,11 +699,11 @@ button {
     }
 }
 
-.attribution {
-    left: 350px;
-    top: 3000px;
+ .attribution {
+    left: 670px;
+    top: 1000px;
     width: 200px;
-}
+    }
 
 
 .menu-nav-active {
