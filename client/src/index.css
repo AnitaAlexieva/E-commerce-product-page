@@ -442,13 +442,16 @@ button {
 .attribution {
     font-size: 11px;
     text-align: center;
-    left: 650px;
     position: absolute;
     top: 800px;
+    left: 670px;
+    width: 200px;
+    
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(25.94deg 100% 55.1%);
+    text-decoration: none;
 }
 
 @media (max-width: 376px) {
@@ -697,13 +700,12 @@ button {
         height: 20px;
         width: 30px;
     }
-}
-
- .attribution {
-    left: 670px;
-    top: 1000px;
-    width: 200px;
+    .attribution{
+        left: 320px;
+        top: 2500px;
+    
     }
+}
 
 
 .menu-nav-active {
