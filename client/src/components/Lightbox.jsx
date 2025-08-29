@@ -5,36 +5,36 @@ export default function Lightbox({
     isOpenFunct
 }) {
     const images = [
-    "/assets/images/image-product-1.jpg",
-    "/assets/images/image-product-2.jpg",
-    "/assets/images/image-product-3.jpg",
-    "/assets/images/image-product-4.jpg"
-  ];
+        "/assets/images/image-product-1.jpg",
+        "/assets/images/image-product-2.jpg",
+        "/assets/images/image-product-3.jpg",
+        "/assets/images/image-product-4.jpg"
+    ];
 
-  const thumbnails = [
-    "/assets/images/image-product-1-thumbnail.jpg",
-    "/assets/images/image-product-2-thumbnail.jpg",
-    "/assets/images/image-product-3-thumbnail.jpg",
-    "/assets/images/image-product-4-thumbnail.jpg"
-  ];
+    const thumbnails = [
+        "/assets/images/image-product-1-thumbnail.jpg",
+        "/assets/images/image-product-2-thumbnail.jpg",
+        "/assets/images/image-product-3-thumbnail.jpg",
+        "/assets/images/image-product-4-thumbnail.jpg"
+    ];
 
     const [largeImage, setLargeImage] = useState(images[0])
     const [activeMiniImg, setActiveMiniImg] = useState(thumbnails[0])
     const [currentIndex, setCurrentIndex] = useState(0);
 
 
-  useEffect(() =>{
-    setActiveMiniImg(thumbnails[currentIndex]);
-    setLargeImage(images[currentIndex])
-  },[currentIndex])
+    useEffect(() => {
+        setActiveMiniImg(thumbnails[currentIndex]);
+        setLargeImage(images[currentIndex])
+    }, [currentIndex])
 
-  const goToNext = () =>{
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-  }
+    const goToNext = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+    }
 
-  const goToPrevious = () =>{
-    setCurrentIndex((prevIndex) => prevIndex === 0 ? images.length - 1 : prevIndex - 1)
-  }
+    const goToPrevious = () => {
+        setCurrentIndex((prevIndex) => prevIndex === 0 ? images.length - 1 : prevIndex - 1)
+    }
 
     return (
         <div className={(isOpenLarge) ? "lightbox-active" : "lightbox-hidden"}>
